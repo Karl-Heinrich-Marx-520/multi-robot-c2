@@ -1,0 +1,23 @@
+cmake_minimum_required(VERSION 3.21)
+project(multi_robot_c2 VERSION 0.1.0 LANGUAGES CXX)
+
+include(CTest)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")
+
+add_library(c2_project_options INTERFACE)
+target_compile_features(c2_project_options INTERFACE cxx_std_17)
+set(CMAKE_CXX_EXTENSIONS OFF)
+if(MSVC)
+    target_compile_options(c2_project_options INTERFACE /W4 /WX /permissive- /utf-8)
+else()
+    target_compile_options(c2_project_options INTERFACE -Wall -Wextra -Wpedantic -Werror)
+endif()
+
+add_subdirectory(proto)
+add_subdirectory(io)
+add_subdirectory(logic)
+add_subdirectory(sim)
+add_subdirectory(app)
+if(BUILD_TESTING)
+    add_subdirectory(tests)
+endif()
