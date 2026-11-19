@@ -1,12 +1,24 @@
-# 多机器人中控 multi-robot-c2
+# multi-robot-c2
 
-本项目为高校机器人团队建立统一中控，接入四驱车 `top_akm_dl`、无人机与宇树 Go2 X。第一版在一台电脑上运行中控与 3 个模拟设备：机器狗上报“A 通道堵塞”，中控并行向无人机派发 `OBSERVE`、向四驱车派发 `GUIDE`，终端显示两项任务的 `ACK` 和 `RESULT`，随后验证丢包、重复、乱序与断线恢复。
+多机器人中控。首版目标：机器狗上报堵塞 → 中控派发无人机观察、四驱车引导 → 收到回执与结果。
 
-仓库地址：<https://github.com/Karl-Heinrich-Marx-520/multi-robot-c2>，当前为私有仓库。**已建立可编译的 C++17/CMake 工程骨架、公共消息类型、IO 接口、手动 mock 和 4 个程序入口。** UDP、调度状态机、设备执行与会话恢复尚未实现；运行入口只输出骨架状态，完整消息链路仍是待实现目标。
+当前：C++17 工程骨架与手动 mock；UDP、调度和设备接入待实现。
 
-## 本地构建与验证
+## 分工
 
-安装 CMake 3.21 或更新版本、支持 C++17 的编译器和 Ninja，将它们加入 PATH。Windows 使用 MinGW 时确保其运行库 DLL 所在目录也在 PATH；使用 MSVC 时在 Developer PowerShell 中执行。Linux 可使用 GCC 或 Clang。
+| 负责人 | 工作区 | 职责 |
+|---|---|---|
+| 丞翰 | `io/`、`proto/` | 通信、公共协议 |
+| 子延 | `logic/` | 派单、任务状态机 |
+| 四驱车负责人 | `agents/car/`、`sim/sim_car/` | GUIDE、回执与结果 |
+| 无人机负责人 | `agents/uav/`、`sim/sim_uav/` | OBSERVE、回执与结果 |
+| 机器狗负责人 | `agents/dog/`、`sim/sim_dog/` | 堵塞事件上报 |
+
+`app/` 组装中控；`configs/` 放示例配置；`scripts/` 放脚本；`tests/` 放测试。修改公共协议或跨模块接口，请相关负责人审阅。
+
+## 构建
+
+需要 CMake ≥3.21、Ninja、C++17 编译器；Windows MSVC 使用 Developer PowerShell。
 
 ```bash
 cmake --preset dev
@@ -14,191 +26,24 @@ cmake --build --preset dev
 ctest --preset dev
 ```
 
-Windows 也可在仓库根目录执行 `./scripts/check.ps1`，依次配置、构建和测试。输出位于 `build/dev/bin/`：`c2_center`、`sim_car`、`sim_uav`、`sim_dog`（Windows 带 `.exe`）。运行 `./build/dev/bin/c2_center` 可查看入口状态；这些入口打印说明后退出，尚不监听 UDP，不能当作四进程联调结果。
+输出在 `build/dev/bin/`。`c2_center`、`sim_car`、`sim_uav`、`sim_dog` 当前只打印状态后退出。
 
-当前测试只验证手动 mock 的边界：本地入队不冒充送达、send 时已过期的请求不入队、注入失败事实、订阅销毁后退订、无统计样本时为空值。GitHub Actions 已配置 Windows/Linux 构建与测试，远端每次运行是否通过以 Actions 页面为准。
+## 提交
 
-## 1. 先读什么
-
-| 文档 | 内容 | 谁需要读 |
-|---|---|---|
-| [项目背景与交接](docs/00-项目背景与交接.md) | 演示目标、架构、分工、里程碑与待补事实 | 全员 |
-| [接口协议 v0.2](docs/01-接口协议.md) | 消息字段、回执、时钟、去重、取消与会话恢复 | 通信、调度和设备负责人 |
-| [设备资料核查](docs/02-设备资料核查.md) | 四驱车源码证据、Go2 接口证据与无人机资料缺口 | 通信和设备负责人 |
-
-无人机暂按 UDP 接入设计，上层消息协议与飞控型号待确认，MAVLink over UDP 为候选；模拟设备拟采用 JSON over UDP。协议约定仍需团队评审与设备能力确认。
-
-## 2. 每位同学负责的工作区
-
-每位同学在自己的电脑上克隆完整仓库，主要修改下表分配的目录。目录表示维护责任，跨目录改动应在同一个 PR 中请对应负责人审阅；不要为每位同学复制一份公共协议。
-
-| 同学 / 角色 | 主要工作区 | 要交付的内容 | 需要配合的边界 |
-|---|---|---|---|
-| **丞翰：中控通信** | `io/`、`proto/`；主维护 `docs/01-接口协议.md` | 公共消息定义、IO 接口、mock、UDP 收发、校验、去重、队列、截止丢弃、心跳与会话恢复 | 向调度层提供消息与通信事实；透传设备结果，业务决策由调度层完成 |
-| **子延：中控调度** | `logic/` | `A_BLOCKED` 派单规则、任务状态机、并行任务跟踪、重试或放弃策略、任务状态展示 | 通过 `io/api/` 收发消息；使用公共消息定义，设备通信由 IO 层处理 |
-| **四驱车负责人：姓名待补** | `agents/car/`、`sim/sim_car/` | `GUIDE` 的模拟接收与执行、ACK/RESULT、后续 ROS/底盘适配 | 明确目标点映射、导航完成条件、取消能力与本地失控保护 |
-| **无人机负责人：姓名待补** | `agents/uav/`、`sim/sim_uav/` | `OBSERVE` 的模拟接收与执行、ACK/RESULT、后续飞控/SDK 适配 | 确认飞控型号、UDP 上层协议、区域定位、观察完成条件与本地失控保护 |
-| **机器狗负责人：姓名待补** | `agents/dog/`、`sim/sim_dog/` | `A_BLOCKED` 事件、心跳、后续 Go2 SDK/DDS 适配 | 确认 X 实机权限、事件来源、网络配置与本地失控保护 |
-
-如果同一位同学负责多台设备，就同时维护对应目录；设备负责人的姓名和 GitHub 用户名确认后补入上表。设备模拟器先完成统一协议闭环，再接原生设备。
-
-以下是公共工作区，每次改动都要明确负责人和审阅人：
-
-| 公共工作区 | 维护与审阅规则 |
-|---|---|
-| `proto/`、`io/api/`、接口协议文档 | 丞翰主维护，子延审阅；影响设备字段或能力时，由对应设备负责人确认；字段、代码和说明在同一 PR 中更新 |
-| `app/` | 丞翰与子延共同维护，负责中控组装；修改接口连接方式时互相审阅 |
-| `sim/fault/` | 丞翰主维护公共故障注入，设备负责人接入；模拟设备必须走真实消息路径 |
-| `configs/`、`scripts/`、根目录 CMake 配置 | 丞翰先维护构建和四进程启动入口，其他同学改动时请受影响负责人审阅 |
-| `tests/` | 各模块负责人维护相应测试；公共消息与跨模块行为由相关负责人共同确认 |
-| `docs/`、`README.md` | 谁改变行为谁同步说明；设备资料补充由对应设备负责人提供依据 |
-
-## 3. 目录约定
-
-```text
-multi-robot-c2/
-├── README.md
-├── docs/                    背景、协议、设备接入与演示说明
-├── proto/                   全项目共用的消息类型与序列化定义
-├── io/                      丞翰：通信层
-│   ├── api/                 对调度层公开的接口
-│   ├── mock/                支持故障注入的模拟实现
-│   └── src/                 传输、队列、心跳和会话实现
-├── logic/                   子延：派单规则与任务状态机
-├── agents/                  设备负责人：实机适配
-│   ├── car/
-│   ├── uav/
-│   └── dog/
-├── sim/                     设备负责人：各自模拟器
-│   ├── sim_car/
-│   ├── sim_uav/
-│   ├── sim_dog/
-│   └── fault/               公共故障注入
-├── app/                     中控入口与模块组装
-├── configs/                 不含秘密的示例配置
-├── scripts/                 构建、启动与演示脚本
-├── tests/                   按模块组织测试
-├── CMakeLists.txt           统一构建入口
-└── CMakePresets.json        共享构建配置
-```
-
-当前工程使用 C++17 和 CMake，命名使用 `snake_case`、成员尾下划线、RAII。各模块复用 `proto/` 定义；调度层调用 IO 接口，设备 agent 调用原生接口，模拟器复用相同的业务消息语义。实机目录目前仅有职责说明，接入时再引入 ROS、MAVLink 或 Go2 SDK，不要求每位同学先安装全部设备依赖。
-
-## 4. 第一次加入仓库
-
-先把自己的 GitHub 用户名发给丞翰，由仓库管理员邀请为协作者；接受邀请后再克隆。当前仓库属于个人账号，协作者获得读写权限；若以后转入 Organization，再按团队配置 Write 等角色。
-
-仓库所有者邀请步骤：
-
-1. 打开 [仓库访问设置](https://github.com/Karl-Heinrich-Marx-520/multi-robot-c2/settings/access)，或从仓库 **Settings → Collaborators** 进入；如 GitHub 要求，先验证身份。
-2. 点击 **Add people**，输入同学的 GitHub 用户名或邮箱，核对账号后发送邀请。每人使用自己的账号。
-3. 同学登录受邀账号，在 GitHub 通知或邮件中接受邀请；邀请未接受前，私有仓库链接可能显示 404。
-4. 回到访问设置确认成员已接受邀请，再让同学按下方命令克隆；成员退出项目时从这里移除访问权限。
-
-发送邀请和接受邀请不会自动把代码下载到同学电脑，需要各自克隆。收集到设备负责人姓名与用户名后，补充第 2 节分工表。
-
-在准备存放项目的父目录打开终端，执行：
+接受邀请后克隆仓库；每项任务从最新 `main` 建分支：
 
 ```bash
 git clone https://github.com/Karl-Heinrich-Marx-520/multi-robot-c2.git
 cd multi-robot-c2
-git config user.name "你的名字或 GitHub 用户名"
-git config user.email "你的 GitHub 已验证邮箱或 GitHub 提供的 noreply 邮箱"
-```
-
-上面的身份配置只作用于当前仓库。HTTPS 首次拉取或推送可能弹出 GitHub 登录授权，按提示完成；不要把令牌、密码写进仓库或发到 PR。
-
-## 5. 每次开发和提交的方法
-
-**采用 `main` + 短期功能分支 + Pull Request（PR）。** `main` 保存已合并的共同版本；每项任务新建分支，完成后开 PR。不要按人长期使用一个分支，也不要把大家的日常改动直接推到 `main`。这是一项协作约定，尚未配置为 GitHub 分支保护。
-
-### 5.1 拉取最新代码并建分支
-
-先提交或妥善保存当前改动，再切回 `main`。下面以通信层 UDP 任务为例；其他同学替换分支名即可。
-
-```bash
 git switch main
 git pull --ff-only origin main
-git switch -c feat/io-udp-session
+git switch -c feat/your-task
+# 修改并验证代码，替换下方路径和提交说明
+git add <修改的文件>
+git commit -m "feat(模块): 具体改动"
+git push -u origin feat/your-task
 ```
 
-| 工作 | 分支示例 |
-|---|---|
-| 丞翰开发通信 | `feat/io-udp-session` |
-| 子延开发调度 | `feat/logic-blocked-routing` |
-| 四驱车模拟器 | `feat/sim-car-guide` |
-| 无人机模拟器 | `feat/sim-uav-observe` |
-| 机器狗事件 | `feat/sim-dog-blocked-event` |
-| 修复重复结果处理 | `fix/result-dedup` |
-| 修改协议文档 | `docs/protocol-cancel` |
+在 GitHub 创建 PR → `main`，写明改动和验证结果，请相关负责人审阅后合并。无需提交构建产物、日志、厂商资料包或密码。
 
-### 5.2 检查、暂存和提交
-
-完成一个可说明、可审阅的变化后，检查文件和差异，再明确选择要提交的路径。以下示例假设本次只修改了 `io/`；请换成自己实际修改的文件或目录。
-
-```bash
-git status
-git diff
-git add io/
-git diff --cached
-git commit -m "feat(io): add UDP session handling"
-git push -u origin feat/io-udp-session
-```
-
-同一分支后续继续修改时，重复检查、`git add`、`git commit`，然后执行 `git push`。只暂存与当前任务有关的文件，不把其他人的未完成改动或本地配置顺手提交。
-
-提交信息采用 `类型(模块): 具体变化`，说明可以使用中文，例如 `feat(logic): 新增堵塞事件派单规则`。常用类型为 `feat`（功能）、`fix`（修复）、`docs`（文档）、`build`（构建）、`test`（测试）。
-
-### 5.3 在 GitHub 发起 PR
-
-打开仓库页面，点击 **Compare & pull request**；或进入 **Pull requests → New pull request**，将 base 选为 `main`，compare 选为自己的功能分支。PR 围绕一项任务，尚未完成但需要提前讨论接口时可创建 Draft PR。
-
-PR 描述写清以下内容，不把未执行的检查写成通过：
-
-```text
-本次改动：解决什么问题，现在是什么行为。
-涉及目录：本次修改了哪些模块。
-接口影响：是否改变消息字段、IO 接口或设备能力；需要谁同步。
-验证方法与结果：实际执行的命令或场景及结果；未验证时说明。
-```
-
-按照第 2 节选择审阅人，至少请 1 名相关同学审阅；自己的 PR 不自行合并，除非团队已明确安排代办。审阅通过且相关构建检查通过后，由丞翰或指定维护者合并。仓库已配置 Windows/Linux 自动构建与测试；分支保护尚未设置，维护者需在合并前确认检查结果。
-
-### 5.4 开发期间同步其他人的改动
-
-自己的功能分支需要吸收最新 `main` 时，先提交当前改动，再执行以下命令。采用 merge，保留已推送分支的历史，不要求组员强制推送。
-
-```bash
-git fetch origin
-git merge origin/main
-```
-
-如果出现冲突，按 Git 提示打开冲突文件，与该目录负责人确认应保留的内容，删除冲突标记后暂存文件、执行 `git commit`，再 `git push`。不确定时先在 PR 中说明，避免直接用整份文件覆盖。想退出本次尚未完成的合并可执行 `git merge --abort`。
-
-### 5.5 PR 合并后收尾
-
-确认 GitHub 显示 PR 已合并后，更新本地 `main`；远端功能分支可在 PR 页面点击 **Delete branch**。以下仍以通信分支为例：
-
-```bash
-git switch main
-git pull --ff-only origin main
-git branch -d feat/io-udp-session
-```
-
-如果使用 Squash merge，`git branch -d` 可能提示分支未完全合并；确认 PR 已合并且该分支没有额外改动后，再执行 `git branch -D feat/io-udp-session`。下一项任务从最新 `main` 建新分支。
-
-## 6. 接口变更怎么配合
-
-先在 Issue 或 Draft PR 写清要改变的字段、触发原因和受影响模块，由丞翰、子延及相关设备负责人确认，再更新公共定义与协议说明。存在依赖时，在 PR 中写明依赖哪个 PR、应按什么顺序合并；不要各自在模块内部添加同名但不同义的字段。
-
-通信层优先交付 `io/api/` 与 mock，让子延开始写调度。模拟器先实现事件、受理回执和终态，原生 SDK/ROS 适配随后替换。丢失回执不等于设备没执行，重连和重试遵守接口协议，不能自行换任务 ID 重发。
-
-## 7. 哪些文件可以提交
-
-| 提交到仓库 | 保留在本地或外部资料目录 |
-|---|---|
-| 源码、CMake 配置、启动脚本 | `build/`、`out/`、IDE 缓存与临时文件 |
-| 协议、接入说明、必要的小型示例数据 | 整套厂商压缩包、视频、运行日志与录屏 |
-| 不含秘密的示例配置 | 令牌、Wi-Fi 密码、`.env`、`configs/local/` 与 `*.local.json/yaml` |
-
-原始设备资料目前位于丞翰电脑的 `D:\Application\WHEELTEC_R680_大车资料`，无需整体上传。其他同学按设备接入说明获取所需版本；代码和共享脚本不能依赖这个个人绝对路径。协议或构建有变化时同步更新说明，使组员能够按文档复现。
+[接口协议](docs/01-接口协议.md) · [设备接入](docs/02-设备资料核查.md)
