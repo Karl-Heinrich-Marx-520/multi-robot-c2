@@ -1,26 +1,52 @@
 # multi-robot-c2
 
-多机器人中控。首版目标：机器狗上报堵塞 → 中控派发无人机观察、四驱车引导 → 收到回执与结果。
+多机器人中控。首版在一台电脑上运行中控和 3 个模拟设备：机器狗上报堵塞，中控给无人机派观察任务、给四驱车派引导任务，最后显示回执和执行结果。
 
-当前：C++17 工程骨架与手动 mock；UDP、调度和设备接入待实现。
+目前已搭好 C++17 工程、公共消息类型和通信 mock；UDP、调度和设备执行待实现。
 
-首次阅读建议：[架构与目录](docs/00-架构与目录.md) → [接口协议](docs/01-接口协议.md) → 对应设备的[接入说明](docs/02-设备资料核查.md)。架构文档含系统图和全部目录的用途；[设备参考资料](materials/README.md) 提供完整资料下载与分类索引。
+## 目录与工作区
 
-## 分工
+```text
+multi-robot-c2/
+├── io/                     丞翰：中控通信
+│   ├── api/                提供给调度调用的通信接口
+│   ├── mock/               不联网的测试替身，供调度先开发
+│   └── src/                UDP 收发、重传、心跳与重连
+├── proto/                  丞翰主维护：大家共用的消息定义
+├── logic/                  子延：派单规则、任务状态与重试决策
+├── agents/                 各设备负责人：连接真实设备
+│   ├── car/                四驱车：接收引导任务，调用 ROS 导航
+│   ├── uav/                无人机：接收观察任务，调用飞控接口
+│   └── dog/                机器狗：调用 SDK，上报堵塞事件
+├── sim/                    各设备负责人：单机联调用的模拟设备
+│   ├── sim_car/            四驱车模拟器
+│   ├── sim_uav/            无人机模拟器
+│   ├── sim_dog/            机器狗模拟器
+│   └── fault/              丞翰：丢包、延迟、断联等故障模拟
+├── app/                    丞翰、子延：组装并启动中控
+├── configs/                各模块的运行配置示例
+├── scripts/                构建、检查等辅助脚本
+├── tests/                  各模块的测试
+├── docs/                   全组共用的协议与接入说明
+├── materials/              设备资料下载入口与文件清单
+├── .github/                自动构建检查和 PR 模板
+├── CMakeLists.txt          工程构建入口
+└── CMakePresets.json        共享构建参数
+```
 
-| 负责人 | 工作区 | 职责 |
-|---|---|---|
-| 丞翰 | `io/`、`proto/` | 通信、公共协议 |
-| 子延 | `logic/` | 派单、任务状态机 |
-| 四驱车负责人 | `agents/car/`、`sim/sim_car/` | GUIDE、回执与结果 |
-| 无人机负责人 | `agents/uav/`、`sim/sim_uav/` | OBSERVE、回执与结果 |
-| 机器狗负责人 | `agents/dog/`、`sim/sim_dog/` | 堵塞事件上报 |
+**丞翰主要改 `io/`、`proto/`；子延主要改 `logic/`；设备负责人主要改自己设备的 `agents/` 和 `sim/` 子目录。** `app/` 由中控两人一起接起来；配置、脚本和测试随对应模块维护。公共消息或通信接口需要修改时，先和受影响的同学说清楚，再一起改。
 
-`app/` 组装中控；`configs/` 放示例配置；`scripts/` 放脚本；`tests/` 放测试。修改公共协议或跨模块接口，请相关负责人审阅。
+`agents/` 连接真机，`sim/` 模拟设备行为，两者使用相同消息格式；先跑通模拟链路，再接真机。设备负责人尚未确定姓名，按设备角色列出。
+
+## 怎么配合
+
+子延通过 `io/api/ilink.hpp` 调用通信，丞翰负责把消息收发做好。设备负责人接收任务后返回 ACK（接受或拒绝），执行结束再返回 RESULT（最终结果）。消息格式统一放在 `proto/`，详细字段见[接口协议](docs/01-接口协议.md)。
+
+没有网络实现时，子延可以先用 `io/mock/` 测派单。模拟器写在各自 `sim/` 目录，真机接口写在各自 `agents/` 目录。[模块关系图](docs/00-架构与目录.md)说明这些部分怎样连接。
 
 ## 构建
 
-需要 CMake ≥3.21、Ninja、C++17 编译器；Windows MSVC 使用 Developer PowerShell。
+需要 CMake ≥3.21、Ninja、C++17 编译器；Windows 使用 MSVC 时，在 Developer PowerShell 中执行。
 
 ```bash
 cmake --preset dev
@@ -28,24 +54,34 @@ cmake --build --preset dev
 ctest --preset dev
 ```
 
-输出在 `build/dev/bin/`。`c2_center`、`sim_car`、`sim_uav`、`sim_dog` 当前只打印状态后退出。
+程序输出在 `build/dev/bin/`：`c2_center`、`sim_car`、`sim_uav`、`sim_dog`。当前入口只打印状态后退出。
 
-## 提交
+## 提交代码
 
-接受邀请后克隆仓库；每项任务从最新 `main` 建分支：
+接受邀请后，首次下载：
 
 ```bash
 git clone https://github.com/Karl-Heinrich-Marx-520/multi-robot-c2.git
 cd multi-robot-c2
-git switch main
-git pull --ff-only origin main
-git switch -c feat/your-task
-# 修改并验证代码，替换下方路径和提交说明
-git add <修改的文件>
-git commit -m "feat(模块): 具体改动"
-git push -u origin feat/your-task
 ```
 
-在 GitHub 创建 PR → `main`，写明改动和验证结果，请相关负责人审阅后合并。无需提交构建产物、日志、厂商资料包或密码。
+每项任务建一个分支。以下以四驱车模拟器为例，其他同学替换分支名和文件路径：
 
-[架构与目录](docs/00-架构与目录.md) · [接口协议](docs/01-接口协议.md) · [设备接入](docs/02-设备资料核查.md) · [参考资料下载](materials/README.md)
+```bash
+git switch main
+git pull --ff-only origin main
+git switch -c feat/sim-car
+# 修改代码并验证
+git add sim/sim_car/
+git commit -m "feat(car): 添加引导任务模拟"
+git push -u origin feat/sim-car
+```
+
+推送后在 GitHub 点 **Compare & pull request**，目标选 `main`，写清改动和验证结果，请相关同学看过后合并。后续继续修改同一分支，提交后直接 `git push`；下一项任务从更新后的 `main` 新建分支。构建产物、日志和密码不提交。
+
+## 文档与资料
+
+- [模块关系图](docs/00-架构与目录.md)
+- [接口协议](docs/01-接口协议.md)
+- [设备接入说明](docs/02-设备资料核查.md)
+- [设备参考资料下载](materials/README.md)：协议手册、ROS 源码和 R680 厂商资料，位于 Release 附件。
