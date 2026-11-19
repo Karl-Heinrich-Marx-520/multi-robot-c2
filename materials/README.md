@@ -1,6 +1,6 @@
 # 设备参考资料
 
-完整资料随仓库保存在 [设备资料 Release](https://github.com/Karl-Heinrich-Marx-520/multi-robot-c2/releases/tag/device-materials-20261119) 的 **Assets** 中。需要登录有本仓库访问权限的 GitHub 账号；直接克隆代码不会下载这些附件。
+完整资料随仓库公开保存在 [设备资料 Release](https://github.com/Karl-Heinrich-Marx-520/multi-robot-c2/releases/tag/device-materials-20261119) 的 **Assets** 中，可直接下载；克隆代码不会下载这些附件。
 
 | 附件 | 约大小 | 内容与用途 |
 |---|---|---|

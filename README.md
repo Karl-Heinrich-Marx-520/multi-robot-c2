@@ -58,10 +58,10 @@ ctest --preset dev
 
 ## 提交代码
 
-接受邀请后，首次下载：
+仓库已公开，任何人都能下载。没有仓库写权限的同学先在 GitHub 点击 **Fork**，将仓库复制到自己账号，再克隆自己的副本；已有写权限的同学可直接克隆本仓库。
 
 ```bash
-git clone https://github.com/Karl-Heinrich-Marx-520/multi-robot-c2.git
+git clone https://github.com/<你的GitHub用户名>/multi-robot-c2.git
 cd multi-robot-c2
 ```
 
@@ -77,7 +77,7 @@ git commit -m "feat(car): 添加引导任务模拟"
 git push -u origin feat/sim-car
 ```
 
-推送后在 GitHub 点 **Compare & pull request**，目标选 `main`，写清改动和验证结果，请相关同学看过后合并。后续继续修改同一分支，提交后直接 `git push`；下一项任务从更新后的 `main` 新建分支。构建产物、日志和密码不提交。
+推送后在 GitHub 点 **Compare & pull request**，目标仓库选 `Karl-Heinrich-Marx-520/multi-robot-c2`，目标分支选 `main`，写清改动和验证结果，请相关同学看过后合并。Fork 使用者开始下一项任务前先在自己副本页面点 **Sync fork → Update branch**，再拉取 main。后续继续修改同一分支，提交后直接 `git push`。构建产物、日志和密码不提交。
 
 ## 文档与资料
 
