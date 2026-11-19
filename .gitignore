@@ -1,0 +1,31 @@
+# Build output
+/build/
+/out/
+/cmake-build-*/
+CMakeUserPresets.json
+
+# Local tools and temporary files
+/.work/
+/.playwright-mcp/
+/.vs/
+/.idea/
+*.user
+*.swp
+__pycache__/
+.venv/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+/configs/local/
+*.local.json
+*.local.yaml
+
+# Runtime output and vendor archives
+/logs/
+/recordings/
+*.log
+*.zip
+*.7z
+*.tar.gz
