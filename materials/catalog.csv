@@ -1,0 +1,371 @@
+﻿relative_path,bytes
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/.megaignore,100
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/1.硬件说明与底盘问题排查/1.ROS机器人硬件说明/1、运动底盘通用介绍.pdf,1084968
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/1.硬件说明与底盘问题排查/1.ROS机器人硬件说明/4.ROS机器人硬件说明.mp4,312341282
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/1.硬件说明与底盘问题排查/2.运动底盘硬件接线及常见问题处理/1、底盘异常排查手册.pdf,1171577
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/1.硬件说明与底盘问题排查/2.运动底盘硬件接线及常见问题处理/2、R550PLUS型号信息汇总.xls,30208
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/1.硬件说明与底盘问题排查/2.运动底盘硬件接线及常见问题处理/3、各车型接线手册及OLED显示说明/两轮差速和四轮两驱底盘的接线说明和OLED显示说明.pdf,1575754
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/1.硬件说明与底盘问题排查/2.运动底盘硬件接线及常见问题处理/3、各车型接线手册及OLED显示说明/全向轮底盘的接线说明和OLED显示说明.pdf,1377840
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/1.硬件说明与底盘问题排查/2.运动底盘硬件接线及常见问题处理/3、各车型接线手册及OLED显示说明/阿克曼底盘的接线说明和OLED显示说明.pdf,2129746
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/1.硬件说明与底盘问题排查/2.运动底盘硬件接线及常见问题处理/3、各车型接线手册及OLED显示说明/麦轮与四驱底盘的接线说明和OLED显示说明.pdf,1613539
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/1.硬件说明与底盘问题排查/2.运动底盘硬件接线及常见问题处理/4、各车型测试代码/GMR编码器（标配）与霍尔编码器的外观区别.jpg,307682
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/1.硬件说明与底盘问题排查/2.运动底盘硬件接线及常见问题处理/4、各车型测试代码/WHEELTEC_C50X测试代码_2026.05.29.zip,29717146
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/1.硬件说明与底盘问题排查/2.运动底盘硬件接线及常见问题处理/4、各车型测试代码/霍尔电机版本测试代码/WHEELTEC_C50X_2026.05.29测试代码霍尔编码器.zip,29160861
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/1.硬件说明与底盘问题排查/2.运动底盘硬件接线及常见问题处理/4、各车型测试代码/霍尔电机版本测试代码/（架空小车再烧录）霍尔编码器4WD四驱车测试代码.hex,210975
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/1.硬件说明与底盘问题排查/2.运动底盘硬件接线及常见问题处理/4、各车型测试代码/霍尔电机版本测试代码/（架空小车再烧录）霍尔编码器Diff差速车测试代码.hex,218138
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/1.硬件说明与底盘问题排查/2.运动底盘硬件接线及常见问题处理/4、各车型测试代码/霍尔电机版本测试代码/（架空小车再烧录）霍尔编码器Mec麦轮车测试代码.hex,225089
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/1.硬件说明与底盘问题排查/2.运动底盘硬件接线及常见问题处理/4、各车型测试代码/霍尔电机版本测试代码/（架空小车再烧录）霍尔编码器Omni全向轮车测试代码.hex,207518
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/1.硬件说明与底盘问题排查/2.运动底盘硬件接线及常见问题处理/4、各车型测试代码/霍尔电机版本测试代码/（架空小车再烧录）霍尔编码器阿克曼车测试代码.hex,231315
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/1.硬件说明与底盘问题排查/2.运动底盘硬件接线及常见问题处理/4、各车型测试代码/（架空小车再烧录）4WD四驱车测试代码.hex,210803
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/1.硬件说明与底盘问题排查/2.运动底盘硬件接线及常见问题处理/4、各车型测试代码/（架空小车再烧录）Akm阿克曼车测试代码.hex,231180
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/1.硬件说明与底盘问题排查/2.运动底盘硬件接线及常见问题处理/4、各车型测试代码/（架空小车再烧录）Diff差速车测试代码.hex,218032
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/1.硬件说明与底盘问题排查/2.运动底盘硬件接线及常见问题处理/4、各车型测试代码/（架空小车再烧录）Mec麦轮车测试代码.hex,224933
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/1.硬件说明与底盘问题排查/2.运动底盘硬件接线及常见问题处理/4、各车型测试代码/（架空小车再烧录）Omni全向轮车测试代码.hex,207473
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/1.硬件说明与底盘问题排查/2.运动底盘硬件接线及常见问题处理/5、阿克曼前轮转向结构异常处理/阿克曼前轮转向结构异常处理.pdf,2804762
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/1.硬件说明与底盘问题排查/2.运动底盘硬件接线及常见问题处理/6、自组底盘相关说明/自组底盘相关说明.pdf,924171
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/1.硬件说明与底盘问题排查/3.底盘拆装手册/底盘拆装手册.pdf,1860153
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/1.硬件说明与底盘问题排查/4.小车无法走直线问题处理/ROS大车机器人软件纠偏系数调节方法.pdf,712227
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/2.运动底盘开发手册/STM32运动底盘开发手册_大型ROS科研机器人_2026.06.30.pdf,3214148
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/1.1 STM32运动底盘源码_ROS机器人控制板_C50C（默认使用该程序）/8驱麦轮大车专用代码/8驱主从车运动学分析布局（轴距轮距）.pdf,501336
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/1.1 STM32运动底盘源码_ROS机器人控制板_C50C（默认使用该程序）/8驱麦轮大车专用代码/WHEELTEC_C50C_2026.09.01_主机.zip,1392608
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/1.1 STM32运动底盘源码_ROS机器人控制板_C50C（默认使用该程序）/8驱麦轮大车专用代码/WHEELTEC_C50C_2026.09.01_从机.zip,1376032
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/1.1 STM32运动底盘源码_ROS机器人控制板_C50C（默认使用该程序）/8驱麦轮大车专用代码/旧版代码/R550PLUS_C50C_8驱麦轮大车_2023.12.04.zip,2802130
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/1.1 STM32运动底盘源码_ROS机器人控制板_C50C（默认使用该程序）/WHEELTEC_C50X_2026.11.04.zip,2142278
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/1.1 STM32运动底盘源码_ROS机器人控制板_C50C（默认使用该程序）/小车出厂程序hex文件/R550PLUS_C50C_大车全向轮_2026.05.29.hex,208958
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/1.1 STM32运动底盘源码_ROS机器人控制板_C50C（默认使用该程序）/小车出厂程序hex文件/R550PLUS_C50C_大车四驱_2026.05.29.hex,212460
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/1.1 STM32运动底盘源码_ROS机器人控制板_C50C（默认使用该程序）/小车出厂程序hex文件/R550PLUS_C50C_大车差速_2026.05.29.hex,219668
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/1.1 STM32运动底盘源码_ROS机器人控制板_C50C（默认使用该程序）/小车出厂程序hex文件/R550PLUS_C50C_大车阿克曼_2026.11.4.hex,238777
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/1.1 STM32运动底盘源码_ROS机器人控制板_C50C（默认使用该程序）/小车出厂程序hex文件/R550PLUS_C50C_大车麦轮_2026.05.29.hex,226574
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/1.1 STM32运动底盘源码_ROS机器人控制板_C50C（默认使用该程序）/源码工程使用指南.pdf,600644
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/1.2 STM32运动底盘源码_ROS机器人控制板_C50C霍尔编码器版本（此为特殊版本，不清楚的客户可以忽略）/WHEELTEC_C50X_2026.05.29霍尔编码器.zip,1515658
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/1.2 STM32运动底盘源码_ROS机器人控制板_C50C霍尔编码器版本（此为特殊版本，不清楚的客户可以忽略）/各车型hex文件/4WD_Car.hex,212489
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/1.2 STM32运动底盘源码_ROS机器人控制板_C50C霍尔编码器版本（此为特殊版本，不清楚的客户可以忽略）/各车型hex文件/Akm_Car.hex,232845
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/1.2 STM32运动底盘源码_ROS机器人控制板_C50C霍尔编码器版本（此为特殊版本，不清楚的客户可以忽略）/各车型hex文件/Diff_Car.hex,232575
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/1.2 STM32运动底盘源码_ROS机器人控制板_C50C霍尔编码器版本（此为特殊版本，不清楚的客户可以忽略）/各车型hex文件/Mec_Car.hex,226635
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/1.2 STM32运动底盘源码_ROS机器人控制板_C50C霍尔编码器版本（此为特殊版本，不清楚的客户可以忽略）/各车型hex文件/Omni_Car.hex,208913
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/1.2 STM32运动底盘源码_ROS机器人控制板_C50C霍尔编码器版本（此为特殊版本，不清楚的客户可以忽略）/源码工程使用指南.pdf,600644
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/1.3 STM32运动底盘源码_ROS机器人控制板_C50C_开环控制版（不使用编码器）/R550PLUS_C50C_8驱麦轮大车_2023.12.04.zip,30956858
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/1.3 STM32运动底盘源码_ROS机器人控制板_C50C_开环控制版（不使用编码器）/R550PLUS_C50C_大车全向轮_2023.12.04.zip,1848633
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/1.3 STM32运动底盘源码_ROS机器人控制板_C50C_开环控制版（不使用编码器）/R550PLUS_C50C_大车四驱_2023.12.04.zip,16214435
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/1.3 STM32运动底盘源码_ROS机器人控制板_C50C_开环控制版（不使用编码器）/R550PLUS_C50C_大车差速_2023.12.04.zip,16114346
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/1.3 STM32运动底盘源码_ROS机器人控制板_C50C_开环控制版（不使用编码器）/R550PLUS_C50C_大车阿克曼_2023.12.01.zip,18024669
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/1.3 STM32运动底盘源码_ROS机器人控制板_C50C_开环控制版（不使用编码器）/R550PLUS_C50C_大车麦轮_2023.12.19.zip,16220515
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/C50A和B的硬件区别.txt,95
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/C50B和C50C主控的硬件资源区别.txt,103
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/ROS机器人控制板_新版C50A或B_实物图与接口说明.jpg,811560
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/ROS机器人控制板_旧版_实物图与接口说明.jpg,92304
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_C50B/F407VET6_大车阿克曼代码_C50B版本(2023.06.28).zip,2771408
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_C50B/STM32运动底盘源码_ROS机器人控制板_C50B_(2023.04.21)/F407VET6_8驱麦轮_移动机器人STM源码_2023.04.21.zip,2747881
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_C50B/STM32运动底盘源码_ROS机器人控制板_C50B_(2023.04.21)/F407VET6_大车全向轮代码_C50B版本_(2023.04.21).zip,1821651
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_C50B/STM32运动底盘源码_ROS机器人控制板_C50B_(2023.04.21)/F407VET6_大车四驱车代码_C50B版本_(2023.04.21).zip,1932281
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_C50B/STM32运动底盘源码_ROS机器人控制板_C50B_(2023.04.21)/F407VET6_大车差速代码_C50B版本_(2023.04.21).zip,1828562
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_C50B/STM32运动底盘源码_ROS机器人控制板_C50B_(2023.04.21)/F407VET6_大车阿克曼代码_C50B版本_(2023.04.21).zip,2751456
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_C50B/STM32运动底盘源码_ROS机器人控制板_C50B_(2023.04.21)/F407VET6_大车麦轮代码_C50B版本_(2023.04.21).zip,1919030
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_C50B/STM32运动底盘源码_ROS机器人控制板_C50B_(2023.04.21)/R550PLUS_C50B_大车阿克曼_2023.07.25.zip,2763794
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_C50B/STM32运动底盘源码_ROS机器人控制板_C50B_(2023.04.21).zip,15351639
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_C50B_霍尔编码器版本（此为特殊版本，不清楚的客户可以忽略）/F407VET6_8驱麦轮_移动机器人STM源码_2023.05.31.zip,2313663
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_C50B_霍尔编码器版本（此为特殊版本，不清楚的客户可以忽略）/F407VET6_大车全向轮代码_C50B版本_(2023.05.31).zip,1821606
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_C50B_霍尔编码器版本（此为特殊版本，不清楚的客户可以忽略）/F407VET6_大车四驱车代码_C50B版本_(2023.05.31).zip,1932334
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_C50B_霍尔编码器版本（此为特殊版本，不清楚的客户可以忽略）/F407VET6_大车差速代码_C50B版本_(2023.05.31).zip,1830997
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_C50B_霍尔编码器版本（此为特殊版本，不清楚的客户可以忽略）/F407VET6_大车阿克曼代码_C50B版本_(2023.05.31).zip,2750768
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_C50B_霍尔编码器版本（此为特殊版本，不清楚的客户可以忽略）/F407VET6_大车麦轮代码_C50B版本_(2023.05.31).zip,1919085
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_C50B_霍尔编码器版本（此为特殊版本，不清楚的客户可以忽略）/霍尔编码器排线线序要求.pdf,229699
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_C50C_未整合车型版本/1.2 STM32运动底盘源码_ROS机器人控制板_C50C_霍尔编码器版本（此为特殊版本，不清楚的客户可以忽略）/R550PLUS_C50C_大车全向轮(霍尔编码器)_2024.04.15.zip,2045519
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_C50C_未整合车型版本/1.2 STM32运动底盘源码_ROS机器人控制板_C50C_霍尔编码器版本（此为特殊版本，不清楚的客户可以忽略）/R550PLUS_C50C_大车四驱(霍尔编码器)_2023.12.04.zip,1291855
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_C50C_未整合车型版本/1.2 STM32运动底盘源码_ROS机器人控制板_C50C_霍尔编码器版本（此为特殊版本，不清楚的客户可以忽略）/R550PLUS_C50C_大车差速(霍尔编码器)2023.09.27.zip,2075972
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_C50C_未整合车型版本/1.2 STM32运动底盘源码_ROS机器人控制板_C50C_霍尔编码器版本（此为特殊版本，不清楚的客户可以忽略）/R550PLUS_C50C_大车阿克曼(霍尔编码器)_2024.04.15.zip,3189099
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_C50C_未整合车型版本/1.2 STM32运动底盘源码_ROS机器人控制板_C50C_霍尔编码器版本（此为特殊版本，不清楚的客户可以忽略）/R550PLUS_C50C_大车麦轮(霍尔编码器)_2024.04.01.zip,2188129
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_C50C_未整合车型版本/1.3 STM32运动底盘源码_ROS机器人控制板_C50C_开环控制版（不使用编码器）/R550PLUS_C50C_8驱麦轮大车_2023.12.04.zip,30956858
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_C50C_未整合车型版本/1.3 STM32运动底盘源码_ROS机器人控制板_C50C_开环控制版（不使用编码器）/R550PLUS_C50C_大车全向轮_2023.12.04.zip,1848633
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_C50C_未整合车型版本/1.3 STM32运动底盘源码_ROS机器人控制板_C50C_开环控制版（不使用编码器）/R550PLUS_C50C_大车四驱_2023.12.04.zip,16214435
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_C50C_未整合车型版本/1.3 STM32运动底盘源码_ROS机器人控制板_C50C_开环控制版（不使用编码器）/R550PLUS_C50C_大车差速_2023.12.04.zip,16114346
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_C50C_未整合车型版本/1.3 STM32运动底盘源码_ROS机器人控制板_C50C_开环控制版（不使用编码器）/R550PLUS_C50C_大车阿克曼_2023.12.01.zip,18024669
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_C50C_未整合车型版本/1.3 STM32运动底盘源码_ROS机器人控制板_C50C_开环控制版（不使用编码器）/R550PLUS_C50C_大车麦轮_2023.12.19.zip,16220515
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_C50C_未整合车型版本/R550PLUS_C50C_8驱麦轮大车_2023.12.04.zip,2802130
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_C50C_未整合车型版本/R550PLUS_C50C_大车全向轮_2023.12.04.zip,1848633
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_C50C_未整合车型版本/R550PLUS_C50C_大车四驱_2023.12.04.zip,1950525
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_C50C_未整合车型版本/R550PLUS_C50C_大车差速_2023.12.04.zip,1839065
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_C50C_未整合车型版本/R550PLUS_C50C_大车阿克曼_2023.12.01.zip,2997703
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_C50C_未整合车型版本/R550PLUS_C50C_大车麦轮_2023.12.19.zip,1948497
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_新版C50A/F407VET6_大车全向轮代码_C50A版本_(2022.11.08).zip,5593923
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_新版C50A/F407VET6_大车四驱车代码_C50A版本_(2022.11.08).zip,6761055
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_新版C50A/F407VET6_大车差速代码_C50A版本_(2022.11.08).zip,5799981
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_新版C50A/F407VET6_大车阿克曼代码_C50A版本_(2022.11.08) .zip,6521786
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_新版C50A/F407VET6_大车麦轮代码_C50A版本_(2022.11.17).zip,20066829
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_新版C50A/代码文件夹根目录内含接线说明_必须接正确!!（整车发货已接好线）.txt,0
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_旧版/STM32运动底盘源码_F103RCT6版本（2022.10.12）/F103RCT6_8驱麦轮_移动机器人STM源码.zip,32613022
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_旧版/STM32运动底盘源码_F103RCT6版本（2022.10.12）/F103RCT6_全向轮_移动机器人STM32源码.zip,15051883
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_旧版/STM32运动底盘源码_F103RCT6版本（2022.10.12）/F103RCT6_四驱_移动机器人STM32源码.zip,16213786
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_旧版/STM32运动底盘源码_F103RCT6版本（2022.10.12）/F103RCT6_差速_移动机器人STM32源码.zip,15266095
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_旧版/STM32运动底盘源码_F103RCT6版本（2022.10.12）/F103RCT6_阿克曼_移动机器人STM32源码.zip,6417309
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_旧版/STM32运动底盘源码_F103RCT6版本（2022.10.12）/F103RCT6_麦轮_移动机器人STM32源码.zip,16225003
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_旧版/STM32运动底盘源码_F103RCT6版本（2022.10.12）/代码文件夹根目录内含接线说明_必须接正确!!（整车发货已接好线）.txt,0
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_旧版/STM32运动底盘源码_F405RGT6版本（2022.10.21）/F405RGT6_8驱麦轮_移动机器人STM源码.zip,13913283
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_旧版/STM32运动底盘源码_F405RGT6版本（2022.10.21）/F405RGT6_全向轮_移动机器人STM32源码.zip,5701890
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_旧版/STM32运动底盘源码_F405RGT6版本（2022.10.21）/F405RGT6_四驱_移动机器人STM32源码.zip,6848999
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_旧版/STM32运动底盘源码_F405RGT6版本（2022.10.21）/F405RGT6_差速_移动机器人STM32源码.zip,5905838
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_旧版/STM32运动底盘源码_F405RGT6版本（2022.10.21）/F405RGT6_阿克曼_移动机器人STM32源码.zip,6614521
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_旧版/STM32运动底盘源码_F405RGT6版本（2022.10.21）/F405RGT6_麦轮_移动机器人STM32源码.zip,23985359
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/STM32运动底盘源码_ROS机器人控制板_旧版/STM32运动底盘源码_F405RGT6版本（2022.10.21）/代码文件夹根目录内含接线说明_必须接正确!!（整车发货已接好线）.txt,0
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/Thumbs.db,14848
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/2.旧版控制板的STM32源码/如何区分C50A-B-C控制板.jpg,331410
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/R680大车串口烧录说明.pdf,691700
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/USB一键下载_资料链接.txt,78
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/3.STM32运动底盘源码/顶配阿克曼更新固件必读说明.pdf,868825
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/主控制器_C50C版/32F407VET6主控芯片数据手册/STM32F407VET6.PDF,5557002
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/主控制器_C50C版/32F407VET6主控芯片数据手册/STM32中文参考手册_V10.pdf,14306739
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/主控制器_C50C版/C50C_程序烧录接口串口1与串口3.jpg,130324
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/主控制器_C50C版/CAN通信驱动芯片/VP230.pdf,1064780
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/主控制器_C50C版/串口TTL转USB电平芯片资料/CH9102F.PDF,188115
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/主控制器_C50C版/主板详解_V1.0版.png,646503
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/主控制器_C50C版/主板详解_V4.0V4.1V4.2版.png,775544
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/主控制器_C50C版/主板详解_V4.3版.png,481050
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/主控制器_C50C版/原理图与资源分配图/V1.0版/C50C主控原理图.pdf,482329
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/主控制器_C50C版/原理图与资源分配图/V1.0版/C50C集成板资源分配.pdf,97185
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/主控制器_C50C版/原理图与资源分配图/V1.0版/C50C集成板资源分配表.pdf,96690
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/主控制器_C50C版/原理图与资源分配图/V4.0 4.1 4.2版/C50C-V4.0V4.1V4.2集成板资源分配.pdf,97768
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/主控制器_C50C版/原理图与资源分配图/V4.0 4.1 4.2版/C50C-V4.0原理图.pdf,644069
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/主控制器_C50C版/原理图与资源分配图/V4.0 4.1 4.2版/C50C-V4.1V4.2原理图.pdf,653998
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/主控制器_C50C版/原理图与资源分配图/V4.3版/C50C-V4.3集成板资源分配.pdf,97869
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/主控制器_C50C版/原理图与资源分配图/V4.3版/C50C_V4.3原理图.pdf,692613
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/主控制器_C50C版/原理图与资源分配图/说明.txt,78
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/主控制器_C50C版/姿态传感器资料/V1.0版/MPU-6000.6050中文资料.pdf,736221
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/主控制器_C50C版/姿态传感器资料/V1.0版/MPU-60X0寄存器中文版V4.0.pdf,1333167
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/主控制器_C50C版/姿态传感器资料/V1.0版/MPU6050原版英文手册.PDF,1487214
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/主控制器_C50C版/姿态传感器资料/V1.0版/MPU6050寄存器英文版本.pdf,921465
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/主控制器_C50C版/姿态传感器资料/V4.0及以上版本/ICM-20948.pdf,1149633
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/主控制器_C50C版/更新记录.txt,1317
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/旧版主控制器资料/主控制器_C50A版/C50A_程序烧录接口串口1与串口3.jpg,130324
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/旧版主控制器资料/主控制器_C50A版/C50A主板原理图_20221026.PDF,493307
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/旧版主控制器资料/主控制器_C50A版/C50A集成板资源分配.pdf,95415
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/旧版主控制器资料/主控制器_C50A版/CAN通信驱动芯片/VP230.pdf,1064780
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/旧版主控制器资料/主控制器_C50A版/ROS机器人控制板_新版C50A_实物图与接口说明.jpg,811560
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/旧版主控制器资料/主控制器_C50A版/STM32F407VET6主控芯片数据手册/STM32F407VET6.PDF,5557002
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/旧版主控制器资料/主控制器_C50A版/STM32F407VET6主控芯片数据手册/STM32中文参考手册_V10.pdf,14306739
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/旧版主控制器资料/主控制器_C50A版/串口TTL转USB电平芯片资料/CH9102F.PDF,188115
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/旧版主控制器资料/主控制器_C50A版/姿态传感器资料/MPU-6000.6050中文资料.pdf,736221
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/旧版主控制器资料/主控制器_C50A版/姿态传感器资料/MPU-60X0寄存器中文版V4.0.pdf,1333167
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/旧版主控制器资料/主控制器_C50A版/姿态传感器资料/MPU6050原版英文手册.PDF,1487214
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/旧版主控制器资料/主控制器_C50A版/姿态传感器资料/MPU6050寄存器英文版本.pdf,921465
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/旧版主控制器资料/主控制器_C50B版/C50B_程序烧录接口串口1与串口3.jpg,130324
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/旧版主控制器资料/主控制器_C50B版/C50B主控原理图.pdf,496152
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/旧版主控制器资料/主控制器_C50B版/C50B主板资源分配.pdf,95701
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/旧版主控制器资料/主控制器_C50B版/CAN通信驱动芯片/VP230.pdf,1064780
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/旧版主控制器资料/主控制器_C50B版/ROS机器人控制板_新版C50B_实物图与接口说明.jpg,853850
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/旧版主控制器资料/主控制器_C50B版/STM32F407VET6主控芯片数据手册/STM32F407VET6.PDF,5557002
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/旧版主控制器资料/主控制器_C50B版/STM32F407VET6主控芯片数据手册/STM32中文参考手册_V10.pdf,14306739
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/旧版主控制器资料/主控制器_C50B版/串口TTL转USB电平芯片资料/CH9102F.PDF,188115
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/旧版主控制器资料/主控制器_C50B版/姿态传感器资料/MPU-6000.6050中文资料.pdf,736221
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/旧版主控制器资料/主控制器_C50B版/姿态传感器资料/MPU-60X0寄存器中文版V4.0.pdf,1333167
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/旧版主控制器资料/主控制器_C50B版/姿态传感器资料/MPU6050原版英文手册.PDF,1487214
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/旧版主控制器资料/主控制器_C50B版/姿态传感器资料/MPU6050寄存器英文版本.pdf,921465
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/旧版主控制器资料/主控制器_转接板+F103RCT6/CAN通信驱动芯片/VP230.pdf,1064780
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/旧版主控制器资料/主控制器_转接板+F103RCT6/ROS机器人控制板_控制器STM32F103RC原理图.pdf,151883
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/旧版主控制器资料/主控制器_转接板+F103RCT6/ROS机器人控制板_旧版_实物图与接口说明.jpg,92304
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/旧版主控制器资料/主控制器_转接板+F103RCT6/ROS机器人控制板_转接板原理图.pdf,237277
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/旧版主控制器资料/主控制器_转接板+F103RCT6/STM32F103RCT6主控芯片数据手册/STM32F103RCT6.PDF,3225510
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/旧版主控制器资料/主控制器_转接板+F103RCT6/STM32F103RCT6主控芯片数据手册/STM32F103xCDE_DS_CH_V5.pdf,2901411
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/旧版主控制器资料/主控制器_转接板+F103RCT6/STM32F103RCT6主控芯片数据手册/STM32中文参考手册_V10.pdf,14306739
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/旧版主控制器资料/主控制器_转接板+F103RCT6/串口TTL转USB电平芯片资料/CP2102.PDF,2008799
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/旧版主控制器资料/主控制器_转接板+F103RCT6/姿态传感器资料/MPU-6000.6050中文资料.pdf,736221
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/旧版主控制器资料/主控制器_转接板+F103RCT6/姿态传感器资料/MPU-60X0寄存器中文版V4.0.pdf,1333167
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/旧版主控制器资料/主控制器_转接板+F103RCT6/姿态传感器资料/MPU6050原版英文手册.PDF,1487214
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/旧版主控制器资料/主控制器_转接板+F103RCT6/姿态传感器资料/MPU6050寄存器英文版本.pdf,921465
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/电机驱动/新版（2022.12.22起用）的驱动有更高的支持更高的电压输入（32V）.txt,0
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/电机驱动/（新版）双通道直流有刷电机驱动D50A用户手册(2026.04.27) .pdf,1011255
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/电机驱动/（新版）双通道直流有刷电机驱动D50A用户手册（12.22).pdf,998145
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/电机驱动/（旧版）【12A】双通道直流有刷电机驱动器-数据手册V2.0.pdf,1151331
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/蓝牙模块/JDY-33_蓝牙模块_资料链接.txt,87
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/4.芯片数据手册与原理图/蓝牙模块/旧版蓝牙/BT04蓝牙模块资料.zip,111250122
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/5.USB一键下载与蓝牙无烧录教程/1.USB一键下载/USB一键下载_资料链接.txt,78
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/5.USB一键下载与蓝牙无烧录教程/2.蓝牙无烧录教程与工具/1.无线烧录配置与使用视频教程/1.无线烧录配置教程说明.mp4,406474907
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/5.USB一键下载与蓝牙无烧录教程/2.蓝牙无烧录教程与工具/1.无线烧录配置与使用视频教程/2.补充：WIFI模块使用说明.mp4,76720515
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/5.USB一键下载与蓝牙无烧录教程/2.蓝牙无烧录教程与工具/2.烧录工具/C50C_BootLoader_64kb_V1.0.hex,37753
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/5.USB一键下载与蓝牙无烧录教程/2.蓝牙无烧录教程与工具/2.烧录工具/C50C_V4.3_BootLoader_64kb_V1.0.hex,37827
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/5.USB一键下载与蓝牙无烧录教程/2.蓝牙无烧录教程与工具/2.烧录工具/FlyMcu2188.exe,2663424
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/5.USB一键下载与蓝牙无烧录教程/2.蓝牙无烧录教程与工具/2.烧录工具/WHEELTEC 无线烧录工具.exe,9834051
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/5.USB一键下载与蓝牙无烧录教程/2.蓝牙无烧录教程与工具/2.烧录工具/WHEELTEC_C50X_2026.05.29已配置无线烧录.zip,2189590
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/5.USB一键下载与蓝牙无烧录教程/2.蓝牙无烧录教程与工具/WHEELTEC 无线烧录软件使用说明文档.pdf,1034543
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/5.USB一键下载与蓝牙无烧录教程/简单更新固件程序请参考USB一键下载教程.txt,0
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/R680随货手册_2026.9.7.pdf,3621997
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/WHEELTEC R680 ROS大型科研机器人系列资料文件结构.txt,2997
+2.WHEELTEC R680 ROS大型科研机器人系列底盘资料/更新记录.txt,13407
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/CMakeLists.txt,1061
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/include/Quaternion_Solution.h,220
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/include/wheeltec_robot.h,7452
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/launch/3d_mapping.launch,491
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/launch/3d_navigation.launch,1105
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/launch/3d_slam.launch,1285
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/launch/aruco.launch,1307
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/launch/gnss_matrix.launch,123
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/launch/include/algorithm_gmapping.launch,1681
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/launch/include/algorithm_hector.launch,2337
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/launch/include/algorithm_karto.launch,289
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/launch/include/amcl.launch,2397
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/launch/include/base_serial.launch,2005
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/launch/include/dwa_local_planner.launch,1784
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/launch/include/dwa_local_planner_pure3d.launch,1880
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/launch/include/robot_pose_ekf.launch,677
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/launch/include/rtabmap_mapping.launch,2751
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/launch/include/rtabmap_nav.launch,3994
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/launch/include/teb_local_planner.launch,1944
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/launch/include/teb_local_planner_pure3d.launch,2040
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/launch/include/velocity_smoother.launch,961
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/launch/lgsvl-tf.launch,137
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/launch/mapping.launch,2430
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/launch/navigation.launch,844
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/launch/open_autoware.launch,1026
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/launch/orb_slam.launch,1426
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/launch/pure3d_mapping.launch,2548
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/launch/pure3d_navigation.launch,5540
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/launch/robot_model_visualization.launch,28530
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/launch/robot_model_visualization_cx.launch,26009
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/launch/rrt_slam.launch,389
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/launch/simple.launch,1858
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/launch/simple.launch.bak,1858
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/launch/turn_on_wheeltec_robot.launch,4475
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/launch/wheeltec_camera.launch,4512
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/launch/wheeltec_lidar.launch,7944
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/map/map_saver.launch,184
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/map/WHEELTEC.pgm,73780
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/map/WHEELTEC.yaml,195
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/map/WHEELTEC_end.yaml,76
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/package.xml,2868
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_brushless_senior_diff/costmap_car_params.yaml,1065
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_brushless_senior_diff/teb_local_planner_params.yaml,2118
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_flagship_4wd_bs/costmap_car_params.yaml,1057
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_flagship_4wd_bs/teb_local_planner_params.yaml,2102
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_flagship_4wd_dl/costmap_car_params.yaml,1058
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_flagship_4wd_dl/teb_local_planner_params.yaml,2109
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_flagship_four_wheel_diff_bs/costmap_car_params.yaml,1056
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_flagship_four_wheel_diff_bs/teb_local_planner_params.yaml,2107
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_flagship_four_wheel_diff_dl/costmap_car_params.yaml,1056
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_flagship_four_wheel_diff_dl/teb_local_planner_params.yaml,2106
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_flagship_mec_bs/costmap_car_params.yaml,1053
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_flagship_mec_bs/teb_local_planner_params.yaml,2100
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_flagship_mec_dl/costmap_car_params.yaml,1053
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_flagship_mec_dl/teb_local_planner_params.yaml,2100
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_four_wheel_diff_bs/costmap_car_params.yaml,1055
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_four_wheel_diff_bs/teb_local_planner_params.yaml,2106
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_four_wheel_diff_dl/costmap_car_params.yaml,1055
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_four_wheel_diff_dl/teb_local_planner_params.yaml,2107
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_mini_4wd/costmap_car_params.yaml,1053
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_mini_4wd/teb_local_planner_params.yaml,2104
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_mini_4wd_moveit_four/costmap_car_params.yaml,1053
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_mini_4wd_moveit_four/teb_local_planner_params.yaml,2105
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_mini_4wd_moveit_six/costmap_car_params.yaml,1055
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_mini_4wd_moveit_six/teb_local_planner_params.yaml,2105
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_mini_akm/costmap_car_params.yaml,1055
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_mini_akm/teb_local_planner_params.yaml,2091
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_mini_diff/costmap_car_params.yaml,1054
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_mini_diff/teb_local_planner_params.yaml,2096
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_mini_mec/costmap_car_params.yaml,1053
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_mini_mec/teb_local_planner_params.yaml,2093
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_mini_mec_moveit_four/costmap_car_params.yaml,1053
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_mini_mec_moveit_four/teb_local_planner_params.yaml,2100
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_mini_mec_moveit_six/costmap_car_params.yaml,1054
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_mini_mec_moveit_six/teb_local_planner_params.yaml,2100
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_mini_omni/costmap_car_params.yaml,1053
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_mini_omni/teb_local_planner_params.yaml,2012
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_mini_tank/costmap_car_params.yaml,1053
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_mini_tank/teb_local_planner_params.yaml,2106
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_mini_tank_moveit_four/costmap_car_params.yaml,1053
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_mini_tank_moveit_four/teb_local_planner_params.yaml,2113
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_senior_4wd_bs/costmap_car_params.yaml,1048
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_senior_4wd_bs/teb_local_planner_params.yaml,2098
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_senior_4wd_dl/costmap_car_params.yaml,1048
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_senior_4wd_dl/teb_local_planner_params.yaml,2103
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_senior_akm/costmap_car_params.yaml,1047
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_senior_akm/teb_local_planner_params.yaml,2092
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_senior_diff/costmap_car_params.yaml,1044
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_senior_diff/teb_local_planner_params.yaml,2088
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_senior_mec_bs/costmap_car_params.yaml,1048
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_senior_mec_bs/teb_local_planner_params.yaml,2099
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_senior_mec_dl/costmap_car_params.yaml,1044
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_senior_mec_dl/teb_local_planner_params.yaml,2098
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_senior_mec_EightDrive/costmap_car_params.yaml,1054
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_senior_mec_EightDrive/teb_local_planner_params.yaml,2109
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_senior_omni/costmap_car_params.yaml,1052
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_senior_omni/teb_local_planner_params.yaml,2012
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_top_4wd_bs/costmap_car_params.yaml,1073
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_top_4wd_bs/teb_local_planner_params.yaml,2097
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_top_4wd_dl/costmap_car_params.yaml,1071
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_top_4wd_dl/teb_local_planner_params.yaml,2096
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_top_akm_bs/costmap_car_params.yaml,1212
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_top_akm_bs/teb_local_planner_params.yaml,2105
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_top_akm_dl/costmap_car_params.yaml,1181
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_top_akm_dl/teb_local_planner_params.yaml,2106
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_top_mec_bs/costmap_car_params.yaml,1073
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_top_mec_bs/teb_local_planner_params.yaml,2097
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_top_mec_dl/costmap_car_params.yaml,1074
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_top_mec_dl/teb_local_planner_params.yaml,2096
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_top_mec_EightDrive/costmap_car_params.yaml,1053
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_top_mec_EightDrive/teb_local_planner_params.yaml,2104
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_top_omni/costmap_car_params.yaml,1053
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_car/param_top_omni/teb_local_planner_params.yaml,2009
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_common/costmap_common_params.yaml,4103
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_common/costmap_common_params_pure3d.yaml,4417
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_common/global_costmap_params.yaml,1683
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_costmap_common/local_costmap_params.yaml,1640
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_nav_common/base_global_planner_param.yaml,1481
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_nav_common/dwa_local_planner_params.yaml,3633
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_nav_common/move_base_params.yaml,3293
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_nav_common/teb_local_planner_params.yaml,3234
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/params_nav_common/wheeltec_smoother.yaml,897
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/scripts/ch9102_udev.sh,470
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/scripts/gnss_matrix.py,4416
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/scripts/node_ping.py,6393
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/scripts/send_mark.py,15806
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/scripts/wheeltec_udev.sh,881
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/src/Quaternion_Solution.cpp,3284
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/src/twist_transform.cpp,1214
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/src/wheeltec_robot.cpp,34449
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/urdf/brushless_senior_diff.urdf,2647
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/urdf/flagship_4wd_bs_robot.urdf,2644
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/urdf/flagship_4wd_dl_robot.urdf,2644
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/urdf/flagship_four_wheel_diff_bs_robot.urdf,2644
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/urdf/flagship_four_wheel_diff_dl_robot.urdf,2644
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/urdf/flagship_mec_bs_robot.urdf,2635
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/urdf/flagship_mec_dl_robot.urdf,2635
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/urdf/four_wheel_diff_bs_robot.urdf,2644
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/urdf/four_wheel_diff_dl_robot.urdf,2644
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/urdf/mec_EightDrive_robot.urdf,4953
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/urdf/mini_4wd_moveit.urdf,19068
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/urdf/mini_4wd_moveit_four.urdf,19312
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/urdf/mini_4wd_moveit_six.urdf,21643
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/urdf/mini_4wd_robot.urdf,2658
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/urdf/mini_akm_robot.urdf,2648
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/urdf/mini_diff_robot.urdf,2078
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/urdf/mini_mec_moveit.urdf,17522
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/urdf/mini_mec_moveit_four.urdf,17665
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/urdf/mini_mec_moveit_six.urdf,21643
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/urdf/mini_mec_robot.urdf,2666
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/urdf/mini_omni_robot.urdf,1968
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/urdf/mini_tank_moveit.urdf,15856
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/urdf/mini_tank_moveit_four.urdf,16617
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/urdf/senior_4wd_bs_robot.urdf,2643
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/urdf/senior_4wd_dl_robot.urdf,2643
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/urdf/senior_4wd_robot.urdf,2643
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/urdf/senior_akm_robot.urdf,2633
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/urdf/senior_diff_robot.urdf,2070
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/urdf/senior_mec_dl_robot.urdf,2635
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/urdf/senior_mec_robot.urdf,2643
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/urdf/senior_omni_robot.urdf,1976
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/urdf/top_4wd_bs_robot.urdf,2642
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/urdf/top_4wd_dl_robot.urdf,2651
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/urdf/top_akm_bs_robot.urdf,2634
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/urdf/top_akm_dl_robot.urdf,2635
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/urdf/top_mec_bs_robot.urdf,2634
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/urdf/top_mec_dl_robot.urdf,2635
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/urdf/top_omni_robot.urdf,1970
+_ROS源码_top_akm_dl/turn_on_wheeltec_robot/wheeltec_udev.sh,3772
+_协议手册/CAN通信控制与反馈_2025-5-16.pdf,2540121
+_协议手册/ROS2-WHEELTEC机器人的ROS和STM32通信过程_20251208.pdf,1873918
+_协议手册/ROS多机通信设置.pdf,1463897
+_协议手册/串口-CAN通信控制命令示例与讲解（以阿克曼为例，含转向角度计算）.pdf,496223
+_协议手册/串口通信控制与反馈_2026-8-12.pdf,2240463
+_协议手册/单片机与APP通信协议.pdf,878061
+_机器狗Go2X/Go2X_二次开发接口速查.md,8544
+_机器狗Go2X/ref_sport_api.hpp,3062
+_机器狗Go2X/ref_sport_client.hpp,2006
+noetic_src_20241022.zip,1111178864
