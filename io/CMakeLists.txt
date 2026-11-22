@@ -1,5 +1,6 @@
-add_library(c2_io INTERFACE)
-target_link_libraries(c2_io INTERFACE c2_protocol)
-
-add_library(c2_io_mock mock/mock_link.cpp)
-target_link_libraries(c2_io_mock PUBLIC c2_io)
+add_library(c2_io src/udp.cpp src/json.cpp src/io.cpp)
+target_link_libraries(c2_io PUBLIC c2_protocol)
+target_include_directories(c2_io SYSTEM PRIVATE "${PROJECT_SOURCE_DIR}/third_party")
+if(WIN32)
+    target_link_libraries(c2_io PRIVATE ws2_32 bcrypt)
+endif()
