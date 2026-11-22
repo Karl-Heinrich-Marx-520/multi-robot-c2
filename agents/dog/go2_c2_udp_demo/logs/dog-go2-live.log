@@ -1,0 +1,49 @@
+08:26:04 JSONL_LOG /home/jetson/go2_c2_udp_demo/logs/wire-dog-891707efbdf04c04ba10066dea4108b3.jsonl
+08:26:04 START {"role": "dog", "local": ["192.168.55.1", 19003], "peer": ["192.168.55.100", 19000], "session_id": "891707efbdf04c04ba10066dea4108b3"}
+Local commands (never sent as plaintext over the robot link):
+  status
+  event A 0.8 1                         dog: report blockage
+  accept <task_id|msg_id|last>           dog: accept pending TASK/CANCEL
+  reject <task_id|msg_id|last> CAPABILITY
+  result <task_id|last> SUCCESS {"note":"manual simulation complete"}
+  result <task_id|last> FAILED {"reason":"manual failure"}
+  result <task_id|last> ABORTED {"reason":"manual stop confirmed"}
+  task {"action":"OBSERVE","params":{"area":"A","alt_m":15,"loiter_s":60},"execution_timeout_ms":120000,"expire_in_ms":1200000,"max_clock_skew_ms":600000}
+  cancel <task_id|last> {"reason":"operator","expire_in_ms":1200000,"max_clock_skew_ms":600000}
+  query <task_id|last>                  center: query task state
+  clock <bound_ms|unknown>             confirm measured absolute clock skew bound
+  help / quit
+Task action and params are opaque to this manual simulator; accepting them does
+not certify robot capability. No ROS, SDK or physical control calls are made.
+
+08:26:04 CLOCK_UNSYNCED NTP uncertainty/skew exceeds 1000ms
+08:26:14 CLOCK_UNSYNCED NTP uncertainty/skew exceeds 1000ms
+08:26:24 CLOCK_UNSYNCED NTP uncertainty/skew exceeds 1000ms
+08:26:34 CLOCK_UNSYNCED NTP uncertainty/skew exceeds 1000ms
+08:26:44 CLOCK_UNSYNCED NTP uncertainty/skew exceeds 1000ms
+08:26:54 CLOCK_UNSYNCED NTP uncertainty/skew exceeds 1000ms
+13:03:56 CLOCK_UNSYNCED wall clock jumped; reconfirm clock bound
+13:04:05 CLOCK_BOUND_MS 34
+13:04:05 EVENT_QUEUED {"version": 1, "type": "EVENT", "msg_id": "93f944978100415a8f36d684b7b63421", "session_id": "891707efbdf04c04ba10066dea4108b3", "dst_session_id": "4e461ed1a77e41bcbb4a587638d5cfc1", "src_id": "dog_01", "dst_id": "c2", "trace_id": "0c6b5fb4255c4cceb008e8aab626a79e", "ts_mono_ms": 2497890, "body": {"event_code": "A_BLOCKED", "severity": 1, "payload": {"channel": "A", "block_ratio": 0.8}}}
+13:04:05 LOCAL QUEUED 93f944978100415a8f36d684b7b63421
+13:04:05 RECEIPT 93f944978100415a8f36d684b7b63421
+13:04:05 TASK_WAIT_OPERATOR {"version": 1, "type": "TASK", "msg_id": "affe4d8fddf94d379b42a73e0eefb6e4", "session_id": "4e461ed1a77e41bcbb4a587638d5cfc1", "dst_session_id": "891707efbdf04c04ba10066dea4108b3", "src_id": "c2", "dst_id": "dog_01", "trace_id": "ba64f49519534c5093ca51e5003c84d5", "ts_mono_ms": 1425391, "body": {"action": "GUIDE", "params": {"channel": "A", "target": "A_exit", "speed_mps": 0.1}, "execution_timeout_ms": 30000, "max_clock_skew_ms": 1000, "expire_at_unix_ms": 1795352765926, "task_id": "ba64f49519534c5093ca51e5003c84d5"}}
+13:04:05 ACK_SENT {"version": 1, "type": "ACK", "msg_id": "5ce798531d1749578b4e30f8cb153630", "session_id": "891707efbdf04c04ba10066dea4108b3", "dst_session_id": "4e461ed1a77e41bcbb4a587638d5cfc1", "src_id": "dog_01", "dst_id": "c2", "trace_id": "ba64f49519534c5093ca51e5003c84d5", "ts_mono_ms": 2497991, "body": {"ack_for_msg_id": "affe4d8fddf94d379b42a73e0eefb6e4", "task_id": "ba64f49519534c5093ca51e5003c84d5", "accepted": true, "reject_reason": null}}
+13:04:05 LOCAL OK
+13:04:06 RESULT_QUEUED {"version": 1, "type": "RESULT", "msg_id": "d87247c04bd84501a5852130cfc58994", "session_id": "891707efbdf04c04ba10066dea4108b3", "dst_session_id": "4e461ed1a77e41bcbb4a587638d5cfc1", "src_id": "dog_01", "dst_id": "c2", "trace_id": "ba64f49519534c5093ca51e5003c84d5", "ts_mono_ms": 2498042, "body": {"task_id": "ba64f49519534c5093ca51e5003c84d5", "status": "SUCCESS", "detail": {"note": "Go2 Jetson manual simulation"}}}
+13:04:06 LOCAL QUEUED RESULT
+13:04:06 RECEIPT d87247c04bd84501a5852130cfc58994
+13:04:06 TASK_WAIT_OPERATOR {"version": 1, "type": "TASK", "msg_id": "a41c3508f68f449987aa3636b1a66f7e", "session_id": "4e461ed1a77e41bcbb4a587638d5cfc1", "dst_session_id": "891707efbdf04c04ba10066dea4108b3", "src_id": "c2", "dst_id": "dog_01", "trace_id": "3b3fa87f35e54cfcb046c223faf197cc", "ts_mono_ms": 1425543, "body": {"action": "GUIDE", "params": {"channel": "A", "target": "A_exit", "speed_mps": 0.1}, "execution_timeout_ms": 30000, "max_clock_skew_ms": 1000, "expire_at_unix_ms": 1795352766077, "task_id": "3b3fa87f35e54cfcb046c223faf197cc"}}
+13:04:06 ACK_SENT {"version": 1, "type": "ACK", "msg_id": "90dfbab81a85460fa9399b7ccbb6eefe", "session_id": "891707efbdf04c04ba10066dea4108b3", "dst_session_id": "4e461ed1a77e41bcbb4a587638d5cfc1", "src_id": "dog_01", "dst_id": "c2", "trace_id": "3b3fa87f35e54cfcb046c223faf197cc", "ts_mono_ms": 2498143, "body": {"ack_for_msg_id": "a41c3508f68f449987aa3636b1a66f7e", "task_id": "3b3fa87f35e54cfcb046c223faf197cc", "accepted": false, "reject_reason": "CAPABILITY"}}
+13:04:06 LOCAL OK
+13:04:06 TASK_WAIT_OPERATOR {"version": 1, "type": "TASK", "msg_id": "f09b7b5e88b7463faf0019512ed8b28f", "session_id": "4e461ed1a77e41bcbb4a587638d5cfc1", "dst_session_id": "891707efbdf04c04ba10066dea4108b3", "src_id": "c2", "dst_id": "dog_01", "trace_id": "05ce0459ce1c420d9e0b27159e922f4b", "ts_mono_ms": 1425643, "body": {"action": "GUIDE", "params": {"channel": "A", "target": "A_exit", "speed_mps": 0.1}, "execution_timeout_ms": 30000, "max_clock_skew_ms": 1000, "expire_at_unix_ms": 1795352766178, "task_id": "05ce0459ce1c420d9e0b27159e922f4b"}}
+13:04:06 ACK_SENT {"version": 1, "type": "ACK", "msg_id": "a168980f3d08420e96bc3122e0737009", "session_id": "891707efbdf04c04ba10066dea4108b3", "dst_session_id": "4e461ed1a77e41bcbb4a587638d5cfc1", "src_id": "dog_01", "dst_id": "c2", "trace_id": "05ce0459ce1c420d9e0b27159e922f4b", "ts_mono_ms": 2498244, "body": {"ack_for_msg_id": "f09b7b5e88b7463faf0019512ed8b28f", "task_id": "05ce0459ce1c420d9e0b27159e922f4b", "accepted": true, "reject_reason": null}}
+13:04:06 LOCAL OK
+13:04:06 CANCEL_WAIT_OPERATOR {"version": 1, "type": "CANCEL", "msg_id": "c8d6f47a13f0487899d932bdfe9f0205", "session_id": "4e461ed1a77e41bcbb4a587638d5cfc1", "dst_session_id": "891707efbdf04c04ba10066dea4108b3", "src_id": "c2", "dst_id": "dog_01", "trace_id": "05ce0459ce1c420d9e0b27159e922f4b", "ts_mono_ms": 1425745, "body": {"task_id": "05ce0459ce1c420d9e0b27159e922f4b", "reason": "manual test", "expire_at_unix_ms": 1795352676279, "max_clock_skew_ms": 1000}}
+13:04:06 ACK_SENT {"version": 1, "type": "ACK", "msg_id": "b589298b516e440d9bc4a1813d5559d3", "session_id": "891707efbdf04c04ba10066dea4108b3", "dst_session_id": "4e461ed1a77e41bcbb4a587638d5cfc1", "src_id": "dog_01", "dst_id": "c2", "trace_id": "05ce0459ce1c420d9e0b27159e922f4b", "ts_mono_ms": 2498345, "body": {"ack_for_msg_id": "c8d6f47a13f0487899d932bdfe9f0205", "task_id": "05ce0459ce1c420d9e0b27159e922f4b", "accepted": true, "reject_reason": null}}
+13:04:06 CANCEL_ACCEPTED_WAIT_STOP 05ce0459ce1c420d9e0b27159e922f4b
+13:04:06 LOCAL OK
+13:04:06 RESULT_QUEUED {"version": 1, "type": "RESULT", "msg_id": "efff32bf4379444dbd1e464af1fce140", "session_id": "891707efbdf04c04ba10066dea4108b3", "dst_session_id": "4e461ed1a77e41bcbb4a587638d5cfc1", "src_id": "dog_01", "dst_id": "c2", "trace_id": "05ce0459ce1c420d9e0b27159e922f4b", "ts_mono_ms": 2498395, "body": {"task_id": "05ce0459ce1c420d9e0b27159e922f4b", "status": "ABORTED", "detail": {"reason": "manual simulation stop"}}}
+13:04:06 LOCAL QUEUED RESULT
+13:04:06 RECEIPT efff32bf4379444dbd1e464af1fce140
+13:04:06 STOP 
