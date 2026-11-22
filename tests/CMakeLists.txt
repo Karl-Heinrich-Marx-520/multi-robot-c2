@@ -1,3 +1,7 @@
 add_executable(c2_mock_contract_test mock_contract_test.cpp)
 target_link_libraries(c2_mock_contract_test PRIVATE c2_io_mock)
 add_test(NAME mock_contract COMMAND c2_mock_contract_test)
+
+add_executable(c2_car_task_test car_task_test.cpp)
+target_link_libraries(c2_car_task_test PRIVATE c2_protocol)
+add_test(NAME car_task COMMAND c2_car_task_test)
