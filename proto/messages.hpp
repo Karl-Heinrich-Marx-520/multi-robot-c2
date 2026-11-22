@@ -13,7 +13,7 @@ namespace c2 {
 inline constexpr std::uint16_t protocol_version = 1;
 inline constexpr std::size_t max_datagram_bytes = 1200;
 
-// In-memory JSON model; the wire codec is implemented in io/src/json.cpp.
+// In-memory JSON model only. Encoding, decoding and validation are not implemented.
 struct JsonValue {
     using Object = std::map<std::string, JsonValue>;
     using Array = std::vector<JsonValue>;
