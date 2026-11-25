@@ -8,3 +8,7 @@ if(Python3_Interpreter_FOUND)
         "${CMAKE_CURRENT_SOURCE_DIR}/udp_guide_test.py" "$<TARGET_FILE:c2_center>")
     set_tests_properties(udp_guide_integration PROPERTIES TIMEOUT 20)
 endif()
+
+add_executable(c2_car_task_test car_task_test.cpp)
+target_link_libraries(c2_car_task_test PRIVATE c2_protocol)
+add_test(NAME car_task COMMAND c2_car_task_test)
