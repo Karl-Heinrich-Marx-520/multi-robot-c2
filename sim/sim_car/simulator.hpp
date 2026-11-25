@@ -19,13 +19,14 @@ public:
         : device_id_(std::move(device_id)), session_id_(std::move(session_id)),
           next_message_id_(std::move(next_message_id)) {}
 
-    // The transport supplies decoded, validated messages from an admitted controller.
+    // The transport supplies decoded messages from the configured controller.
+    // First-round loopback tasks may omit their destination session.
     std::vector<Message> receive(const Message& message, std::uint64_t unix_ms,
                                  TaskProcessor::Clock::time_point now) {
         const auto& request = message.envelope;
         const auto* task = std::get_if<Task>(&message.body);
         if (!task || request.version != protocol_version || request.dst_id != device_id_ ||
-            request.dst_session_id != session_id_) {
+            (request.dst_session_id && request.dst_session_id != session_id_)) {
             return {};
         }
 

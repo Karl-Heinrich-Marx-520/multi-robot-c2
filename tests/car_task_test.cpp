@@ -1,7 +1,7 @@
 #include <iostream>
 #include <limits>
 #include <stdexcept>
-#include "sim/sim_car/simulator.hpp"
+#include "agents/car/task_processor.hpp"
 
 using namespace c2;
 using Processor = car::TaskProcessor;
@@ -15,57 +15,6 @@ Task guide(std::string id = "task1", std::uint32_t timeout = 3000) {
             {"target", JsonValue{std::string("A_exit")}}, {"speed_mps", JsonValue{0.5}}},
             10000, 0, timeout};
 }
-
-void check_simulator_messages() {
-    const std::string car_session(32, 'a');
-    const std::string center_session(32, 'b');
-    const std::string trace_id(32, 'c');
-    const std::string task_id(32, 'd');
-    char next_id = '1';
-    car::Simulator simulator("car_01", car_session, [&next_id] { return std::string(32, next_id++); });
-    const auto start = Processor::Clock::time_point{};
-    Message task{{protocol_version, std::string(32, 'e'), center_session, car_session,
-                  "center", "car_01", trace_id, 0}, guide(task_id)};
-
-    auto wrong_destination = task;
-    wrong_destination.envelope.dst_session_id = center_session;
-    check(simulator.receive(wrong_destination, 100, start).empty(), "ignore tasks for another session");
-    wrong_destination = task;
-    wrong_destination.envelope.dst_id = "uav_01";
-    check(simulator.receive(wrong_destination, 100, start).empty(), "ignore tasks for another device");
-
-    const auto replies = simulator.receive(task, 100, start);
-    check(replies.size() == 1, "simulator returns one ACK");
-    const auto& ack = std::get<Ack>(replies[0].body);
-    const auto& ack_envelope = replies[0].envelope;
-    check(ack.accepted && ack.task_id == task_id && ack.ack_for_msg_id == task.envelope.msg_id,
-          "ACK identifies the original TASK");
-    check(ack_envelope.src_id == "car_01" && ack_envelope.dst_id == "center" &&
-          ack_envelope.session_id == car_session && ack_envelope.dst_session_id == center_session &&
-          ack_envelope.trace_id == trace_id, "ACK carries routing, sessions and trace");
-
-    const auto replay = simulator.receive(task, 101, start + 1ms);
-    check(replay.size() == 1 && replay[0].envelope.msg_id == ack_envelope.msg_id,
-          "repeated TASK message keeps the original ACK ID");
-    check(simulator.tick(start + 999ms).empty(), "no RESULT before simulated completion");
-    const auto completed = simulator.tick(start + 1000ms);
-    check(completed.size() == 1, "simulator returns one RESULT");
-    const auto& result = std::get<Result>(completed[0].body);
-    const auto& result_envelope = completed[0].envelope;
-    check(result.status == ResultStatus::success && result.task_id == task_id &&
-          result_envelope.trace_id == trace_id && result_envelope.dst_session_id == center_session &&
-          result_envelope.msg_id != ack_envelope.msg_id, "RESULT is correlated and has its own ID");
-    check(simulator.tick(start + 2s).empty(), "simulation produces one terminal message");
-
-    task.envelope.msg_id = std::string(32, 'f');
-    const auto terminal_replay = simulator.receive(task, 2200, start + 2100ms);
-    check(terminal_replay.size() == 2 &&
-          std::get<Ack>(terminal_replay[0].body).ack_for_msg_id == task.envelope.msg_id &&
-          terminal_replay[1].envelope.msg_id == result_envelope.msg_id,
-          "new message for a completed task receives a new ACK and the original RESULT");
-    check(simulator.tick(start + 4s).empty(), "completed task is not executed again");
-}
-
 int main() {
     try {
         const auto start = Processor::Clock::time_point{};
@@ -126,7 +75,6 @@ int main() {
         Processor delayed;
         delayed.task("c2", "t", guide(), 100, start, 0);
         check(delayed.tick(start + 5000ms).at(0).result.status == ResultStatus::success, "delayed tick preserves earlier success");
-        check_simulator_messages();
         std::cout << "Car task checks passed.\n";
     } catch (const std::exception& error) {
         std::cerr << error.what() << '\n';

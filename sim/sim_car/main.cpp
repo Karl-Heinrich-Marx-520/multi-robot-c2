@@ -1,34 +1,44 @@
+#include <chrono>
+#include <cstdint>
 #include <iostream>
+#include <stdexcept>
 
+#include "io/api/io.hpp"
+#include "io/src/udp.hpp"
 #include "sim/sim_car/simulator.hpp"
 
 int main() {
-    const std::string car_session(32, 'a');
-    unsigned int sequence = 0;
-    c2::car::Simulator car("car_01", car_session, [&sequence] {
-        const auto suffix = std::to_string(++sequence);
-        return std::string(32 - suffix.size(), '0') + suffix;
-    });
-    const auto now = c2::car::TaskProcessor::Clock::time_point{};
-    const c2::Task guide{std::string(32, 'b'), "GUIDE",
-        {{"channel", c2::JsonValue{std::string("A")}},
-         {"target", c2::JsonValue{std::string("A_exit")}},
-         {"speed_mps", c2::JsonValue{0.5}}}, 10000, 0, 3000};
-    const c2::Message request{{c2::protocol_version, std::string(32, 'c'), std::string(32, 'd'),
-                               car_session, "center", "car_01", std::string(32, 'e'), 0}, guide};
+    using namespace std::chrono_literals;
+    constexpr std::uint32_t loopback_address = 0x7f000001u;
+    const c2::Ports ports;
+    try {
+        c2::detail::UdpSocket socket(ports.car);
+        c2::car::Simulator car(c2::car_id, c2::make_id(), c2::make_id);
+        const auto send_replies = [&](const auto& replies) {
+            for (const auto& reply : replies) {
+                socket.send(ports.center, c2::encode_json(reply));
+            }
+        };
 
-    const auto replies = car.receive(request, 100, now);
-    const auto& ack = std::get<c2::Ack>(replies.at(0).body);
-    std::cout << "[in-memory demo] GUIDE -> ACK accepted=" << std::boolalpha
-              << ack.accepted << " ack_for_msg_id=" << ack.ack_for_msg_id << '\n';
-    const auto repeated = car.receive(request, 100, now);
-    std::cout << "Repeated GUIDE: same ACK msg_id="
-              << (repeated.at(0).envelope.msg_id == replies.at(0).envelope.msg_id) << '\n';
-
-    for (const auto& completion : car.tick(now + std::chrono::seconds(1))) {
-        const auto& result = std::get<c2::Result>(completion.body);
-        std::cout << "RESULT task=" << result.task_id << " trace=" << completion.envelope.trace_id.value()
-                  << " status=" << (result.status == c2::ResultStatus::success ? "SUCCESS" : "FAILED") << '\n';
+        std::cout << c2::car_id << " listening on 127.0.0.1:" << ports.car << std::endl;
+        for (;;) {
+            try {
+                const auto packet = socket.receive(50ms);
+                const auto now = c2::car::TaskProcessor::Clock::now();
+                send_replies(car.tick(now));
+                if (!packet || packet->address != loopback_address || packet->port != ports.center) {
+                    continue;
+                }
+                const auto request = c2::decode_json(packet->data);
+                if (request.envelope.src_id == c2::center_id) {
+                    send_replies(car.receive(request, c2::unix_time_ms(), now));
+                }
+            } catch (const std::runtime_error& error) {
+                std::cerr << "Car I/O: " << error.what() << '\n';
+            }
+        }
+    } catch (const std::runtime_error& error) {
+        std::cerr << error.what() << '\n';
+        return 1;
     }
-    std::cout << "UDP, JSON, heartbeat and RESULT delivery are not connected yet.\n";
 }

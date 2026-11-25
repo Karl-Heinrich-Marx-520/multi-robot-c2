@@ -1,16 +1,24 @@
-# 小车模拟演示
+# 小车模拟器
 
-从仓库根目录运行：
+`sim_car` 监听 `127.0.0.1:19001`。收到中控从 `19000` 发来的 GUIDE 后回复 ACK，受理的任务模拟执行约 1 秒后返回 RESULT。
+
+从仓库根目录构建：
 
 ```bash
-cmake -S . -B build/local-make -G "Unix Makefiles"
-cmake --build build/local-make -j2
-ctest --test-dir build/local-make --output-on-failure
-./build/local-make/bin/sim_car
+cmake --preset dev
+cmake --build --preset dev
 ```
 
-演示用进程内的 `c2::Message` 跑通 GUIDE → ACK → 模拟完成 → RESULT。发送相同 TASK 消息时重放原 ACK，重复派发同一任务时保持原有结果。演示用虚拟 UTC 和单调时间推进。
+第一个终端启动小车模拟器，保持运行：
 
-`simulator.hpp` 提供接入入口。`receive()` 接收通信层已经解码和校验的 TASK，`tick()` 返回新增的执行结果。回复带有原任务标识、事件追踪标识和收发双方的会话标识。小车测试直接传入 `c2::Message`，验证回复字段和任务去重。
+```bash
+./build/dev/bin/sim_car
+```
 
-当前跨进程联调可用 `scripts/sim_car.py` 与 `c2_center --guide`。C++ 模拟器接入时可复用 `c2_io` 的 UDP 与 JSON 编解码，见[通信层说明](../../io/README.md)。任务处理模块见[小车任务处理模块](../../agents/car/README.md)。
+第二个终端让中控下发一条 GUIDE：
+
+```bash
+./build/dev/bin/c2_center --guide
+```
+
+中控显示 `ACK accepted=true` 和 `RESULT status=SUCCESS` 就表示这条模拟链路跑通。
