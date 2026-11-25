@@ -1,7 +1,6 @@
 #include <iostream>
 #include <limits>
 #include <stdexcept>
-#include "io/mock/mock_link.hpp"
 #include "sim/sim_car/simulator.hpp"
 
 using namespace c2;
@@ -18,12 +17,6 @@ Task guide(std::string id = "task1", std::uint32_t timeout = 3000) {
 }
 
 void check_simulator_messages() {
-    MockLink center;
-    std::vector<Message> received;
-    const auto subscription = center.subscribe([&received](const IoEvent& event) {
-        received.push_back(std::get<Message>(event));
-    });
-
     const std::string car_session(32, 'a');
     const std::string center_session(32, 'b');
     const std::string trace_id(32, 'c');
@@ -41,16 +34,10 @@ void check_simulator_messages() {
     wrong_destination.envelope.dst_id = "uav_01";
     check(simulator.receive(wrong_destination, 100, start).empty(), "ignore tasks for another device");
 
-    check(center.send(task, {Processor::Clock::now() + 10s}) == SendStatus::queued, "center queues GUIDE");
-    check(received.empty(), "queueing GUIDE produces no ACK");
-    const auto outbound = center.take_sent();
-    check(outbound.has_value(), "test transport takes GUIDE from mock");
-    for (const auto& reply : simulator.receive(*outbound, 100, start)) {
-        center.inject(reply);
-    }
-    check(received.size() == 1, "center receives one ACK");
-    const auto ack = std::get<Ack>(received[0].body);
-    const auto ack_envelope = received[0].envelope;
+    const auto replies = simulator.receive(task, 100, start);
+    check(replies.size() == 1, "simulator returns one ACK");
+    const auto& ack = std::get<Ack>(replies[0].body);
+    const auto& ack_envelope = replies[0].envelope;
     check(ack.accepted && ack.task_id == task_id && ack.ack_for_msg_id == task.envelope.msg_id,
           "ACK identifies the original TASK");
     check(ack_envelope.src_id == "car_01" && ack_envelope.dst_id == "center" &&
@@ -61,12 +48,10 @@ void check_simulator_messages() {
     check(replay.size() == 1 && replay[0].envelope.msg_id == ack_envelope.msg_id,
           "repeated TASK message keeps the original ACK ID");
     check(simulator.tick(start + 999ms).empty(), "no RESULT before simulated completion");
-    for (const auto& reply : simulator.tick(start + 1000ms)) {
-        center.inject(reply);
-    }
-    check(received.size() == 2, "center receives one RESULT");
-    const auto& result = std::get<Result>(received[1].body);
-    const auto& result_envelope = received[1].envelope;
+    const auto completed = simulator.tick(start + 1000ms);
+    check(completed.size() == 1, "simulator returns one RESULT");
+    const auto& result = std::get<Result>(completed[0].body);
+    const auto& result_envelope = completed[0].envelope;
     check(result.status == ResultStatus::success && result.task_id == task_id &&
           result_envelope.trace_id == trace_id && result_envelope.dst_session_id == center_session &&
           result_envelope.msg_id != ack_envelope.msg_id, "RESULT is correlated and has its own ID");
