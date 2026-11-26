@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-22",
+  "center": "192.168.55.100:19000",
+  "dog": "192.168.55.1:19003",
+  "device_ids": [
+    "c2",
+    "dog_01"
+  ],
+  "unit_tests_each_host": 22,
+  "unique_message_types": {
+    "LINK": 122,
+    "EVENT": 1,
+    "RECEIPT": 3,
+    "TASK": 3,
+    "ACK": 4,
+    "RESULT": 2,
+    "CANCEL": 1
+  },
+  "terminal_results": [
+    {
+      "task_id": "ba64f49519534c5093ca51e5003c84d5",
+      "status": "SUCCESS",
+      "detail": {
+        "note": "Go2 Jetson manual simulation"
+      }
+    },
+    {
+      "task_id": "05ce0459ce1c420d9e0b27159e922f4b",
+      "status": "ABORTED",
+      "detail": {
+        "reason": "manual simulation stop"
+      }
+    }
+  ],
+  "all_event_result_receipts_verified": true,
+  "clock_bound_ms": 34,
+  "robot_motion_tested": false
+}

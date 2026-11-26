@@ -1,0 +1,24 @@
+{
+  "unit_tests_each_host": 26,
+  "agent_stdin": "closed during live test",
+  "six_event_types": [
+    "ARRIVED",
+    "A_BLOCKED",
+    "B_BLOCKED",
+    "C_BLOCKED",
+    "FAULT",
+    "LOW_BATTERY"
+  ],
+  "result_statuses": [
+    "ABORTED",
+    "FAILED",
+    "SUCCESS"
+  ],
+  "all_reports_receipted": true,
+  "task_query_reply_verified": true,
+  "wire_logs": [
+    "wire-center-90b0fb3525704894a9266ea53ba400ee.jsonl",
+    "wire-dog-2d02e1c0c97b44ca8f6f738372d80baf.jsonl"
+  ],
+  "user_agents_restarted": false
+}
